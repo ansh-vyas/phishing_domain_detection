@@ -1,12 +1,52 @@
-# config/config.yaml
+# Configuration for Data Preprocessing
+data:
+  file_path: "data/dataset_full.csv"
+  test_size: 0.2
+  random_state: 42
+
+# Feature Engineering Settings
+features:
+  url_features:
+    include: true
+  domain_features:
+    include: true
+  directory_features:
+    include: true
+  file_features:
+    include: true
+  params_features:
+    include: true
+  resolving_features:
+    include: true
+
+# Model Training Configuration
 model:
-  name: "RandomForestClassifier"
+  type: "RandomForestClassifier"  # Change to other algorithms if needed
   parameters:
     n_estimators: 100
     max_depth: 10
+    random_state: 42
+  save_path: "models/phishing_detection_model.pkl"
 
-data:
-  path: "data/dataset_full.csv"
-
+# Logging Configuration
 logging:
   level: "INFO"
+  file_path: "logs/app.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Flask API Configuration
+api:
+  host: "0.0.0.0"
+  port: 5000
+  debug: true
+
+# Evaluation and Optimization
+evaluation:
+  scoring_metric: "accuracy"
+  cross_validation_folds: 5
+  model_latency_test_samples: 10
+
+# Testing and Experimentation
+testing:
+  validation_split: 0.2  # For additional validation during testing
+  random_seed: 42
