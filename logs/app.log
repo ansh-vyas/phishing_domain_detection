@@ -1,0 +1,56 @@
+2024-10-28 23:20:33,683 - INFO - Logging initialized.
+2024-10-28 23:23:06,896 - INFO - Logging initialized.
+2024-10-28 23:24:08,576 - INFO - Logging initialized.
+2024-10-28 23:24:19,613 - INFO - Logging initialized.
+2024-10-28 23:24:19,613 - INFO - Logging initialized.
+2024-10-28 23:27:08,738 - INFO - Logging initialized.
+2024-10-28 23:27:08,738 - INFO - Logging initialized.
+2024-10-28 23:28:05,149 - INFO - Logging initialized.
+2024-10-28 23:28:05,149 - INFO - Logging initialized.
+2024-10-28 23:28:57,837 - INFO - Logging initialized.
+2024-10-28 23:28:57,837 - INFO - Logging initialized.
+2024-10-28 23:33:35,100 - INFO - Logging initialized.
+2024-10-28 23:34:06,212 - INFO - Logging initialized.
+2024-10-28 23:34:38,322 - INFO - Logging initialized.
+2024-10-28 23:37:01,949 - INFO - Logging initialized.
+2024-10-28 23:37:09,126 - INFO - Logging initialized.
+2024-10-29 00:06:58,497 - INFO - Logging initialized.
+2024-10-29 00:06:58,498 - ERROR - Error loading data: [Errno 2] No such file or directory: 'data/processed_data.csv'
+2024-10-29 00:06:58,498 - ERROR - An error occurred during preprocessing: [Errno 2] No such file or directory: 'data/processed_data.csv'
+2024-10-29 00:07:41,899 - INFO - Logging initialized.
+2024-10-29 00:07:41,900 - ERROR - Error loading data: No columns to parse from file
+2024-10-29 00:07:41,900 - ERROR - An error occurred during preprocessing: No columns to parse from file
+2024-10-29 00:11:48,013 - INFO - Logging initialized.
+2024-10-29 00:11:48,816 - INFO - Data loaded successfully from data/dataset_full.csv
+2024-10-29 00:11:48,956 - INFO - Feature scaling applied.
+2024-10-29 00:12:00,139 - INFO - Processed data saved to data/processed_data.csv.
+2024-10-29 00:12:00,142 - INFO - Data preprocessing completed successfully.
+2024-10-29 00:12:22,736 - INFO - Logging initialized.
+2024-10-29 00:14:10,799 - INFO - Logging initialized.
+2024-10-29 00:17:06,466 - INFO - Logging initialized.
+2024-10-29 00:21:07,392 - INFO - Logging initialized.
+2024-10-29 00:21:08,576 - INFO - Data loaded successfully for model training.
+2024-10-29 00:21:08,638 - INFO - Data split into training and testing sets.
+2024-10-29 00:21:16,002 - INFO - Model training complete.
+2024-10-29 00:21:16,287 - INFO - Model Evaluation - Accuracy: 0.9517766497461929, Precision: 0.925327299175691, Recall: 0.9357633213468454, F1 Score: 0.9305160503860219
+2024-10-29 00:21:16,385 - INFO - Model saved to models/trained_model.pkl
+2024-10-29 00:21:16,385 - INFO - Model training pipeline completed successfully.
+2024-10-29 00:24:14,746 - INFO - Logging initialized.
+2024-10-29 00:24:15,460 - INFO - Data loaded successfully from data/dataset_full.csv
+2024-10-29 00:24:15,630 - INFO - Feature scaling applied.
+2024-10-29 00:24:26,195 - INFO - Processed data saved to data/processed_data.csv.
+2024-10-29 00:24:26,199 - INFO - Data preprocessing completed successfully.
+2024-10-29 00:24:28,257 - INFO - Data loaded successfully from data/dataset_full.csv
+2024-10-29 00:24:29,390 - INFO - Data loaded successfully from data/dataset_full.csv
+2024-10-29 00:24:29,545 - INFO - Feature scaling applied.
+2024-10-29 00:24:41,260 - INFO - Processed data saved to data/processed_data.csv.
+2024-10-29 00:25:37,262 - INFO - Logging initialized.
+2024-10-29 00:25:37,902 - INFO - Data loaded successfully from data/dataset_full.csv
+2024-10-29 00:25:38,018 - INFO - Feature scaling applied.
+2024-10-29 00:25:47,895 - INFO - Processed data saved to data/processed_data.csv.
+2024-10-29 00:25:47,898 - INFO - Data preprocessing completed successfully.
+2024-10-29 00:25:48,840 - INFO - Logging initialized.
+2024-10-29 00:25:50,295 - INFO - Data loaded successfully from data/dataset_full.csv
+2024-10-29 00:25:51,561 - INFO - Data loaded successfully from data/dataset_full.csv
+2024-10-29 00:25:51,692 - INFO - Feature scaling applied.
+2024-10-29 00:26:01,567 - INFO - Processed data saved to data/processed_data.csv.

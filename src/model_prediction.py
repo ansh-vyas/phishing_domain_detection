@@ -2,7 +2,7 @@ import pickle
 import logging
 import numpy as np
 
-MODEL_PATH = 'model.pkl'  # Path to the trained model file
+MODEL_PATH = 'models\\trained_model.pkl'  # Path to the trained model file
 
 def load_model(file_path=MODEL_PATH):
     with open(file_path, 'rb') as file:

@@ -50,3 +50,16 @@ evaluation:
 testing:
   validation_split: 0.2  # For additional validation during testing
   random_seed: 42
+
+paths:
+  processed_data: "data/processed_data.csv"   # Path to your processed dataset
+  model_output: "models/"                     # Directory to save the trained model
+
+train_test_split:
+  test_size: 0.2                              # Ratio for test data in train/test split
+  random_state: 42                            # Seed for reproducibility
+
+model_params:
+  n_estimators: 100                           # Number of trees in the RandomForest
+  max_depth: 10                               # Maximum depth of the trees
+  random_state: 42                            # Seed for reproducibility
