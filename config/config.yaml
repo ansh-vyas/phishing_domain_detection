@@ -1,0 +1,12 @@
+# config/config.yaml
+model:
+  name: "RandomForestClassifier"
+  parameters:
+    n_estimators: 100
+    max_depth: 10
+
+data:
+  path: "data/dataset_full.csv"
+
+logging:
+  level: "INFO"
