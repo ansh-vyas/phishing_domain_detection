@@ -46,6 +46,33 @@ def preprocess_data(data):
         'qty_percent_domain', 'qty_vowels_domain', 'domain_length', 'domain_in_ip',
         'server_client_domain'
     ]
+
+    # Directory-based features
+    directory_features = [
+        'qty_dot_directory', 'qty_hyphen_directory', 'qty_underline_directory', 'qty_slash_directory',
+        'qty_questionmark_directory', 'qty_equal_directory', 'qty_at_directory', 'qty_and_directory',
+        'qty_exclamation_directory', 'qty_space_directory', 'qty_tilde_directory', 'qty_comma_directory',
+        'qty_plus_directory', 'qty_asterisk_directory', 'qty_hashtag_directory', 'qty_dollar_directory',
+        'qty_percent_directory', 'directory_length'
+    ]
+
+    # File-based features
+    file_features = [
+        'qty_dot_file', 'qty_hyphen_file', 'qty_underline_file', 'qty_slash_file',
+        'qty_questionmark_file', 'qty_equal_file', 'qty_at_file', 'qty_and_file',
+        'qty_exclamation_file', 'qty_space_file', 'qty_tilde_file', 'qty_comma_file',
+        'qty_plus_file', 'qty_asterisk_file', 'qty_hashtag_file', 'qty_dollar_file',
+        'qty_percent_file', 'file_length'
+    ]
+
+    # Parameter-based features
+    parameter_features = [
+        'qty_dot_params', 'qty_hyphen_params', 'qty_underline_params', 'qty_slash_params',
+        'qty_questionmark_params', 'qty_equal_params', 'qty_at_params', 'qty_and_params',
+        'qty_exclamation_params', 'qty_space_params', 'qty_tilde_params', 'qty_comma_params',
+        'qty_plus_params', 'qty_asterisk_params', 'qty_hashtag_params', 'qty_dollar_params',
+        'qty_percent_params', 'params_length', 'tld_present_params', 'qty_params'
+    ]
     
     resolving_features = [
         'time_response', 'domain_spf', 'asn_ip', 'time_domain_activation', 'time_domain_expiration',
@@ -53,7 +80,7 @@ def preprocess_data(data):
         'qty_redirects', 'url_google_index', 'domain_google_index', 'url_shortened'
     ]
 
-    feature_columns = url_features + domain_features + resolving_features
+    feature_columns = url_features + domain_features + directory_features + file_features + parameter_features + resolving_features
 
     # Check if required columns are in the data
     missing_columns = [col for col in feature_columns if col not in data.columns]
